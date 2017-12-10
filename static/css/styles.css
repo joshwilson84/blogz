@@ -1,0 +1,76 @@
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  background-color: lightgrey;
+}
+p {
+    margin bottom 10px;
+    border 3px lightgrey;
+
+
+}
+
+nav a {
+    background-color: lightgreen;
+    border-radius:2px;
+    border:none;
+    color: darkgreen;
+    cursor: pointer;
+    display:block;
+    font-size: 85%;
+    margin-bottom: 1rem;
+    padding: .5rem;
+}
+nav a:hover {
+    background:lightblue;
+    box-shadow: 0px 5px 5px #777;
+    left: -3px;
+    position: relative;
+    top: -3px;
+}
+main {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container {
+    margin-left: 3rem;
+}
+
+input {
+    display: block;
+    font-size: 100%;
+    margin: 1rem;
+}
+
+textarea {
+    display: block;
+    font-size: 100%;
+    margin: 1rem;
+}
+
+#submit_button {
+    background-color: lightgreen;
+    border-radius:2px;
+    border:1px;
+    color: darkgreen;
+    cursor: pointer;
+    padding: .5em;
+}
+
+#submit_button:hover {
+    background:lightblue;
+    box-shadow: 0px 5px 5px #777;
+    left: -3px;
+    position: relative;
+    top: -3px;
+}
+
+.flash_message {
+    background-color: MistyRose;
+    border-radius: 2px;
+    color: red;
+    margin: .25rem;
+    padding: 2rem;
+}

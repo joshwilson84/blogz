@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Add a blog entry</h1>
+
+<form action="/new_entry" method="post">
+
+        <label for="title_field">What's the title for your blog post?</label>
+
+        <input id="title_field" name="title" type="text" title="{{new_entry_title}}">
+
+        <br/>
+
+        <label for="body_field">Enter your blog</label>
+
+
+
+        <textarea rows="4" cols="50" id="body_field" name="body">{{new_entry_body}}</textarea>
+
+    <input type="submit" id="submit_button" value="Save">
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
