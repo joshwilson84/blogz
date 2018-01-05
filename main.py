@@ -69,7 +69,7 @@ def new_entry():
             return redirect(url)
 
         else:
-            flash("Sorry both a Title and Body are required")
+            flash("Both a Title and Body are required")
             return render_template('new_entry_form.html', title = "Create your blog post!",
                 new_entry_title=new_entry_title, new_entry_body=new_entry_body)
 
