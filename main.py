@@ -97,7 +97,7 @@ def register():
             return redirect('/main')
         else:
             flash('User already exists')
-            return render_template('register')
+            return render_template('register.html')
 
     return render_template('register.html')
 
