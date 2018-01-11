@@ -1,28 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <h1>All of your blog entries</h1>
-        <ul>
-            {% for entry in all_entries %}
-                <li>
-
-                    <h2>
-                        <a href="/blog?id={{entry.id}}">{{entry.title}}</a>
-                    </h2>
-
-                    <p>{{entry.body}}</p>
-                    <p class="one">{{entry.created}}</p>
+    <h1>All blog entries</h1>
 
 
+{% for post in this_post%}
+    <h1>
+        {{post.title}}
+    </h1>
+        <label>{{post.body}}</label>
+        <p class="post-author">written by <a href="/blog?user={{author}}">{{author}}</a></p>
 
-
-                </li>
+{% endfor %}
 
 
 
 
-            {% endfor %}
-        </ul>
 
 
 

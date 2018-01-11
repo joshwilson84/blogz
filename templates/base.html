@@ -7,9 +7,10 @@
     <main>
         <body>
             <nav>
-                <a href="/blog">List all entries<br />(oldest-first)</a>
-                <a href='/blog?sort=newest'>List all entries<br />(newest-first)</a>
+                <a href="/blog">List all entries</a>
+                <a href="/main">Home</a>
                 <a href="/new_entry">Add a blog entry</a>
+                <a href="/logout">Logout</a>
             </nav>
             <div class="container">
                 {% with messages = get_flashed_messages() %}
